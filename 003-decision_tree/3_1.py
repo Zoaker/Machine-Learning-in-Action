@@ -78,16 +78,16 @@ def creatTree(dataSet, labels):
     return myTree
 
 
-myDat, labels=createDataSet()
-value = chooseBestFeatureToSplit(myDat)
-mytree = creatTree(myDat, labels)
-print (mytree)
+#myDat, labels=createDataSet()
+#value = chooseBestFeatureToSplit(myDat)
+#mytree = creatTree(myDat, labels)
+#print (mytree)
 
 
 
 def plotNode(nodeTxt, centerPt, parentPt, nodeType):
     createPlot.ax1.annotate(nodeTxt, xy=parentPt, xycoords='axes fraction', xytext=centerPt, textcoords='axes fraction', \
-                            va="cener", ha="center", bbox=nodeType, arrowprops=arrow_args)
+                            va="center", ha="center", bbox=nodeType, arrowprops=arrow_args)
 
 def createPlot():
     fig = plt.figure(1, facecolor='white')
